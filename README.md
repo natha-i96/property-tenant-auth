@@ -1,6 +1,7 @@
 # property-tenant-auth
 
 [![Source](https://img.shields.io/badge/source-natha--i96%2Fproperty--tenant--auth-blue)](https://github.com/natha-i96/property-tenant-auth)
+[![Packagist](https://img.shields.io/packagist/v/natha-i96/property-tenant-auth)](https://packagist.org/packages/natha-i96/property-tenant-auth)
 
 A reusable Laravel package that provides two-level Sanctum API authentication for **Property** and **Tenant** tokens. It is **Frankenphp-safe** because it uses Sanctum's default guard and standard `Authenticatable` models — no custom guard is required.
 
