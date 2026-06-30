@@ -1,0 +1,43 @@
+{
+    "$schema": "https://getcomposer.org/schema.json",
+    "name": "natha-i96/property-tenant-auth",
+    "type": "library",
+    "description": "Two-level Laravel Sanctum authentication for Property and Tenant tokens. Frankenphp-safe, no custom guard.",
+    "keywords": ["laravel", "sanctum", "auth", "property", "tenant", "api"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Natha-i96",
+            "email": "natha-i96@example.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "laravel/framework": "^11.0|^12.0",
+        "laravel/sanctum": "^4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0",
+        "orchestra/testbench": "^9.0|^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "NathaI96\\PropertyTenantAuth\\": "src/",
+            "NathaI96\\PropertyTenantAuth\\Database\\Factories\\": "database/factories/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NathaI96\\PropertyTenantAuth\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NathaI96\\PropertyTenantAuth\\PropertyTenantAuthServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
